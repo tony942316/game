@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=action\ evil
+comment0.target=void\ stBattleSeq(java.lang.String,\ Enemy)
+comment1.params=evil
+comment1.target=void\ attack(Enemy)
+comment2.params=
+comment2.target=void\ heal()
+comment3.params=
+comment3.target=void\ hCheck()
+comment4.params=evil
+comment4.target=void\ getDrop(Enemy)
+comment5.params=evil
+comment5.target=void\ doEAttack(Enemy)
+numComments=6

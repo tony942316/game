@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ rat(java.lang.String[])
+comment1.params=args
+comment1.target=void\ rabbit(java.lang.String[])
+comment2.params=args
+comment2.target=void\ chicken(java.lang.String[])
+comment3.params=args
+comment3.target=void\ kangaroo(java.lang.String[])
+comment4.params=args
+comment4.target=void\ bear(java.lang.String[])
+comment5.params=args
+comment5.target=void\ troll(java.lang.String[])
+numComments=6

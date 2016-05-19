@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=health\ minDamage\ maxDamage
+comment0.target=Rat(int,\ int,\ int)
+comment1.params=
+comment1.target=boolean\ special()
+comment2.params=
+comment2.target=int\ drop()
+comment3.params=
+comment3.target=java.lang.String\ getSPS()
+comment4.params=
+comment4.target=int\ getSF()
+numComments=5

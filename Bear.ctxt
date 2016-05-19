@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=health\ minDamage\ maxDamage
+comment0.target=Bear(int,\ int,\ int)
+comment1.params=
+comment1.target=boolean\ special()
+comment2.params=
+comment2.target=int\ drop()
+numComments=3
