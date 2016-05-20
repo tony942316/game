@@ -72,6 +72,7 @@ public class FightRes
         else
         {
             System.out.println("You are DEAD!");
+            System.exit(0);
         }
     }
     public void getDrop(Enemy evil)
