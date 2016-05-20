@@ -30,7 +30,7 @@ public class Player
     public boolean hit()
     {
         int chance = (int)((100 - 1 + 1) * Math.random()) + 1;
-        if(chance < hitChance)
+        if(chance <= hitChance)
         {
             return true;
         }

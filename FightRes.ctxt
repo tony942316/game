@@ -11,4 +11,6 @@ comment4.params=evil
 comment4.target=void\ getDrop(Enemy)
 comment5.params=evil
 comment5.target=void\ doEAttack(Enemy)
-numComments=6
+comment6.params=
+comment6.target=boolean\ getMiss()
+numComments=7
