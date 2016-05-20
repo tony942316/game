@@ -17,4 +17,6 @@ comment7.params=
 comment7.target=Kangaroo\ getKangaroo()
 comment8.params=
 comment8.target=Rabbit\ getRabbit()
-numComments=9
+comment9.params=
+comment9.target=ShopRes\ getShopRes()
+numComments=10

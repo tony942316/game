@@ -27,7 +27,7 @@ public class Map
             else if(action.equalsIgnoreCase("shop"))
             {
                 System.out.println();
-                ShopFTWz.main(args);
+                Shop.main(args);
             }
             else if(action.equalsIgnoreCase("home"))
             {

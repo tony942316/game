@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class Setup
 {
     private static Player player = new Player(10000, 6, 10, 10000, "DeBug");
+    private static ShopRes shop = new ShopRes();
     private static Rat rat = new Rat(10, 2, 3);
     private static Rabbit rabbit = new Rabbit(15, 2, 4);
     private static KillerChicken chicken = new KillerChicken(20, 3, 4);
@@ -33,32 +34,12 @@ public class Setup
         System.out.println();
         Map.main(args);
     } 
-    public static Player getPlayer()
-    {
-        return player;       
-    }
-    public static Rat getRat()
-    {
-        return rat;
-    }
-    public static Bear getBear()
-    {
-        return bear;
-    }
-    public static Troll getTroll()
-    {
-        return troll;
-    }
-    public static KillerChicken getChicken()
-    {
-        return chicken;
-    }
-    public static Kangaroo getKangaroo()
-    {
-        return kangaroo;
-    }
-    public static Rabbit getRabbit()
-    {
-        return rabbit;
-    }
+    public static Player getPlayer(){return player;}
+    public static Rat getRat(){return rat;}
+    public static Bear getBear(){return bear;}
+    public static Troll getTroll(){return troll;}
+    public static KillerChicken getChicken(){return chicken;}
+    public static Kangaroo getKangaroo(){return kangaroo;}
+    public static Rabbit getRabbit(){return rabbit;}
+    public static ShopRes getShopRes(){return shop;}
 }

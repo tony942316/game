@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ShopRes()
+comment1.params=
+comment1.target=void\ changeHCost()
+comment2.params=
+comment2.target=void\ changeSwordLvl()
+comment3.params=
+comment3.target=void\ changeSword()
+comment4.params=
+comment4.target=int\ getSwordLvl()
+comment5.params=
+comment5.target=int\ getHCost()
+comment6.params=
+comment6.target=boolean\ getSword()
+numComments=7
