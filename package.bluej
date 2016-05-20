@@ -2,7 +2,6 @@
 dependency1.from=Setup
 dependency1.to=Player
 dependency1.type=UsesDependency
-<<<<<<< HEAD
 dependency10.from=Shop
 dependency10.to=Setup
 dependency10.type=UsesDependency
@@ -10,101 +9,86 @@ dependency11.from=Map
 dependency11.to=Shop
 dependency11.type=UsesDependency
 dependency12.from=Shop
-=======
-dependency10.from=Home
-dependency10.to=Setup
-dependency10.type=UsesDependency
-dependency11.from=Map
-dependency11.to=Home
-dependency11.type=UsesDependency
-dependency12.from=Home
->>>>>>> origin/master
 dependency12.to=Map
 dependency12.type=UsesDependency
-dependency13.from=Forest
-dependency13.to=Map
+dependency13.from=Home
+dependency13.to=Player
 dependency13.type=UsesDependency
-dependency14.from=FightRes
-dependency14.to=Player
+dependency14.from=Home
+dependency14.to=Setup
 dependency14.type=UsesDependency
-dependency15.from=FightRes
-dependency15.to=Setup
+dependency15.from=Map
+dependency15.to=Home
 dependency15.type=UsesDependency
-dependency16.from=Setup
-dependency16.to=Rat
+dependency16.from=Home
+dependency16.to=Map
 dependency16.type=UsesDependency
-dependency17.from=FightRes
-dependency17.to=Rat
+dependency17.from=Forest
+dependency17.to=Map
 dependency17.type=UsesDependency
-<<<<<<< HEAD
 dependency18.from=Shop
 dependency18.to=Shop
-=======
-dependency18.from=Fight
-dependency18.to=FightRes
->>>>>>> origin/master
 dependency18.type=UsesDependency
-dependency19.from=Fight
-dependency19.to=Bear
+dependency19.from=FightRes
+dependency19.to=Player
 dependency19.type=UsesDependency
 dependency2.from=Setup
 dependency2.to=Map
 dependency2.type=UsesDependency
-dependency20.from=Setup
-dependency20.to=Bear
+dependency20.from=FightRes
+dependency20.to=Setup
 dependency20.type=UsesDependency
-dependency21.from=Fight
-dependency21.to=Troll
+dependency21.from=Setup
+dependency21.to=Rat
 dependency21.type=UsesDependency
-dependency22.from=Setup
-dependency22.to=KillerChicken
+dependency22.from=FightRes
+dependency22.to=Rat
 dependency22.type=UsesDependency
-dependency23.from=Setup
-dependency23.to=Kangaroo
+dependency23.from=Fight
+dependency23.to=FightRes
 dependency23.type=UsesDependency
-dependency24.from=FightRes
-dependency24.to=Enemy
+dependency24.from=Fight
+dependency24.to=Bear
 dependency24.type=UsesDependency
 dependency25.from=Setup
-dependency25.to=Troll
+dependency25.to=Bear
 dependency25.type=UsesDependency
-dependency26.from=Setup
-dependency26.to=Rabbit
+dependency26.from=Fight
+dependency26.to=Troll
 dependency26.type=UsesDependency
-dependency27.from=Fight
-dependency27.to=Rabbit
+dependency27.from=Setup
+dependency27.to=KillerChicken
 dependency27.type=UsesDependency
-dependency28.from=Fight
-dependency28.to=KillerChicken
+dependency28.from=Setup
+dependency28.to=Kangaroo
 dependency28.type=UsesDependency
-dependency29.from=Fight
-dependency29.to=Kangaroo
+dependency29.from=FightRes
+dependency29.to=Enemy
 dependency29.type=UsesDependency
 dependency3.from=Map
 dependency3.to=Forest
 dependency3.type=UsesDependency
-dependency30.from=Enemy
-dependency30.to=Player
+dependency30.from=Setup
+dependency30.to=Troll
 dependency30.type=UsesDependency
-dependency31.from=Enemy
-dependency31.to=Setup
+dependency31.from=Setup
+dependency31.to=Rabbit
 dependency31.type=UsesDependency
-dependency32.from=Shop
-dependency32.to=Player
+dependency32.from=Fight
+dependency32.to=Rabbit
 dependency32.type=UsesDependency
-dependency33.from=Shop
-dependency33.to=ShopRes
+dependency33.from=Fight
+dependency33.to=KillerChicken
 dependency33.type=UsesDependency
-dependency34.from=Shop
-dependency34.to=Setup
+dependency34.from=Fight
+dependency34.to=Kangaroo
 dependency34.type=UsesDependency
-dependency35.from=Shop
-dependency35.to=Map
+dependency35.from=Enemy
+dependency35.to=Player
 dependency35.type=UsesDependency
-dependency36.from=Setup
-dependency36.to=ShopRes
+dependency36.from=Enemy
+dependency36.to=Setup
 dependency36.type=UsesDependency
-<<<<<<< HEAD
 dependency37.from=Setup
 dependency37.to=ShopRes
 dependency37.type=UsesDependency
@@ -113,16 +97,6 @@ dependency38.to=Shop
 dependency38.type=UsesDependency
 dependency39.from=Shop
 dependency39.to=ShopRes
-=======
-dependency37.from=Map
-dependency37.to=Shop
-dependency37.type=UsesDependency
-dependency38.from=FightRes
-dependency38.to=Home
-dependency38.type=UsesDependency
-dependency39.from=FightRes
-dependency39.to=Map
->>>>>>> origin/master
 dependency39.type=UsesDependency
 dependency4.from=Fight
 dependency4.to=Player
@@ -139,24 +113,15 @@ dependency7.type=UsesDependency
 dependency8.from=Fight
 dependency8.to=Forest
 dependency8.type=UsesDependency
-<<<<<<< HEAD
 dependency9.from=Shop
-=======
-dependency9.from=Home
->>>>>>> origin/master
 dependency9.to=Player
 dependency9.type=UsesDependency
 objectbench.height=76
 objectbench.width=529
 package.editor.height=444
 package.editor.width=431
-<<<<<<< HEAD
 package.editor.x=502
 package.editor.y=111
-=======
-package.editor.x=1096
-package.editor.y=146
->>>>>>> origin/master
 package.numDependencies=39
 package.numTargets=16
 package.showExtends=true
@@ -175,7 +140,6 @@ target1.typeParameters=
 target1.width=80
 target1.x=380
 target1.y=270
-<<<<<<< HEAD
 target10.editor.height=757
 target10.editor.width=900
 target10.editor.x=478
@@ -183,26 +147,12 @@ target10.editor.y=39
 target10.height=50
 target10.name=Shop
 target10.naviview.expanded=false
-=======
-target10.editor.height=700
-target10.editor.width=900
-target10.editor.x=0
-target10.editor.y=0
-target10.height=50
-target10.name=Shop
-target10.naviview.expanded=true
->>>>>>> origin/master
 target10.showInterface=false
 target10.type=ClassTarget
 target10.typeParameters=
 target10.width=80
-<<<<<<< HEAD
 target10.x=110
 target10.y=280
-=======
-target10.x=200
-target10.y=70
->>>>>>> origin/master
 target11.editor.height=831
 target11.editor.width=782
 target11.editor.x=-7
@@ -214,11 +164,7 @@ target11.showInterface=false
 target11.type=ClassTarget
 target11.typeParameters=
 target11.width=80
-<<<<<<< HEAD
 target11.x=340
-=======
-target11.x=310
->>>>>>> origin/master
 target11.y=170
 target12.editor.height=824
 target12.editor.width=782
@@ -235,13 +181,8 @@ target12.x=110
 target12.y=330
 target13.editor.height=831
 target13.editor.width=782
-<<<<<<< HEAD
 target13.editor.x=-7
 target13.editor.y=0
-=======
-target13.editor.x=171
-target13.editor.y=36
->>>>>>> origin/master
 target13.height=50
 target13.name=Fight
 target13.naviview.expanded=false
@@ -253,13 +194,8 @@ target13.x=300
 target13.y=60
 target14.editor.height=450
 target14.editor.width=423
-<<<<<<< HEAD
 target14.editor.x=773
 target14.editor.y=115
-=======
-target14.editor.x=6
-target14.editor.y=12
->>>>>>> origin/master
 target14.height=50
 target14.name=Setup
 target14.naviview.expanded=false
@@ -271,13 +207,8 @@ target14.x=110
 target14.y=10
 target15.editor.height=824
 target15.editor.width=782
-<<<<<<< HEAD
 target15.editor.x=0
 target15.editor.y=0
-=======
-target15.editor.x=789
-target15.editor.y=134
->>>>>>> origin/master
 target15.height=50
 target15.name=Home
 target15.naviview.expanded=false
@@ -289,13 +220,8 @@ target15.x=110
 target15.y=230
 target16.editor.height=700
 target16.editor.width=900
-<<<<<<< HEAD
 target16.editor.x=428
 target16.editor.y=124
-=======
-target16.editor.x=731
-target16.editor.y=368
->>>>>>> origin/master
 target16.height=50
 target16.name=Map
 target16.naviview.expanded=false
@@ -305,17 +231,10 @@ target16.typeParameters=
 target16.width=80
 target16.x=110
 target16.y=180
-<<<<<<< HEAD
 target2.editor.height=840
 target2.editor.width=1552
 target2.editor.x=-8
 target2.editor.y=-8
-=======
-target2.editor.height=830
-target2.editor.width=782
-target2.editor.x=801
-target2.editor.y=74
->>>>>>> origin/master
 target2.height=50
 target2.name=Player
 target2.naviview.expanded=false
@@ -327,8 +246,8 @@ target2.x=110
 target2.y=60
 target3.editor.height=831
 target3.editor.width=782
-target3.editor.x=277
-target3.editor.y=235
+target3.editor.x=761
+target3.editor.y=0
 target3.height=50
 target3.name=FightRes
 target3.naviview.expanded=false
@@ -340,8 +259,8 @@ target3.x=380
 target3.y=60
 target4.editor.height=793
 target4.editor.width=782
-target4.editor.x=880
-target4.editor.y=20
+target4.editor.x=403
+target4.editor.y=37
 target4.height=50
 target4.name=Rat
 target4.naviview.expanded=false
@@ -377,7 +296,6 @@ target6.typeParameters=
 target6.width=100
 target6.x=300
 target6.y=270
-<<<<<<< HEAD
 target7.editor.height=831
 target7.editor.width=782
 target7.editor.x=761
@@ -385,25 +303,12 @@ target7.editor.y=0
 target7.height=50
 target7.name=ShopRes
 target7.naviview.expanded=false
-=======
-target7.editor.height=700
-target7.editor.width=900
-target7.editor.x=0
-target7.editor.y=0
-target7.height=50
-target7.name=ShopRes
->>>>>>> origin/master
 target7.showInterface=false
 target7.type=ClassTarget
 target7.typeParameters=
 target7.width=80
-<<<<<<< HEAD
 target7.x=190
 target7.y=280
-=======
-target7.x=200
-target7.y=10
->>>>>>> origin/master
 target8.editor.height=700
 target8.editor.width=900
 target8.editor.x=553
@@ -415,21 +320,12 @@ target8.showInterface=false
 target8.type=ClassTarget
 target8.typeParameters=
 target8.width=80
-<<<<<<< HEAD
 target8.x=380
 target8.y=220
 target9.editor.height=793
 target9.editor.width=782
 target9.editor.x=0
 target9.editor.y=31
-=======
-target8.x=350
-target8.y=220
-target9.editor.height=793
-target9.editor.width=782
-target9.editor.x=987
-target9.editor.y=240
->>>>>>> origin/master
 target9.height=50
 target9.name=Bear
 target9.naviview.expanded=false
@@ -437,9 +333,5 @@ target9.showInterface=false
 target9.type=ClassTarget
 target9.typeParameters=
 target9.width=80
-<<<<<<< HEAD
 target9.x=300
-=======
-target9.x=270
->>>>>>> origin/master
 target9.y=320
