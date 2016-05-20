@@ -8,6 +8,7 @@
 public class FightRes
 {
     Player player = Setup.getPlayer();
+    boolean miss = true;
     public void stBattleSeq(String action, Enemy evil)
     {
         FightRes battle = new FightRes();
@@ -93,16 +94,20 @@ public class FightRes
             int temp = evil.doDamage() * evil.getSF();
             System.out.println("Enemy special attack deals " + temp + " damage!");
             player.changeHealth(-temp);
+            miss = false;
         }
         else if(evil.hit() && evil.getHealth() > 0)
         {
             int temp = evil.doDamage();
             System.out.println("Enemy attacks and deals " + temp + " damage!");
             player.changeHealth(-temp);
+            miss = false;
         }
         else if(evil.getHealth() > 0)
         {
             System.out.println("Enemy missed!");
+            miss = true;
         }
     }
+    public boolean getMiss(){return miss;}
 }
