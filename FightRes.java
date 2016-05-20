@@ -66,14 +66,18 @@ public class FightRes
     }
     public void hCheck()
     {
+        String[]args = null;
         if(player.getHealth() > 0)
         {
             System.out.println("You have " + player.getHealth() + " hitpoints");
         }
         else
         {
-            System.out.println("You are DEAD!");
-            System.exit(0);
+            System.out.println("You are DEAD! You lost " + player.getCoins()*(int).7 + " coins\n");
+            player.changeCoins(-player.getCoins()*(int).7);
+            int temp = player.getMaxHealth() - player.getHealth();
+            player.changeHealth(temp);
+            Home.main(args);
         }
     }
     public void getDrop(Enemy evil)
