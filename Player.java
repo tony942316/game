@@ -15,14 +15,15 @@ public class Player
     private int coins;
     private int hPotions;
     private int hFactor = 20;
-    private int hitChance = 50;
-    public Player(int maxHealth, int minDamage, int maxDamage, int coins, String name)
+    private int hitChance;
+    public Player(int maxHealth, int minDamage, int maxDamage, int coins, int hitchance, String name)
     {
         this.maxHealth = maxHealth;
         this.minDamage = minDamage;
         this.maxDamage = maxDamage;
         this.coins = coins;
         this.name = name;
+        this.hitChance = hitChance;
         health = maxHealth;
     }
     

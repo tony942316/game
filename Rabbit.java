@@ -28,6 +28,7 @@ public class Rabbit extends Enemy
         int coins = (int)((50 - 25 + 1) * Math.random()) + 25;
         return coins;
     }
+    public String getName(){return "Rabbit";}
     public String getSPS()
     {
         return "RABBIT SPECIAL ATTACK CARROT CANON!!!";

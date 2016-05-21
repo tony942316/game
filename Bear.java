@@ -28,6 +28,7 @@ public class Bear extends Enemy
         int coins = (int)((75 - 50 + 1) * Math.random()) + 50;
         return coins * (int)1.1;
     }
+    public String getName(){return "Bear";}
     public String getSPS()
     {
         return "BEAR SPECIAL ATTACK BEAR HUG!!!";

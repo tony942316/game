@@ -28,6 +28,7 @@ public class Troll extends Enemy
         int coins = (int)((75 - 60 + 1) * Math.random()) + 60;
         return coins;
     }
+    public String getName(){return "Troll";}
     public String getSPS()
     {
         return "TROLL SPECIAL ATTACK BONE CRUSHER!!!";

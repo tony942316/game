@@ -28,6 +28,7 @@ public class KillerChicken extends Enemy
         int coins = (int)((50 - 30 + 1) * Math.random()) + 30;
         return coins;
     }
+    public String getName(){return "Chicken";}
     public String getSPS()
     {
         return "CHICKEN SPECIAL ATTACK DEADLY \"PEEP\" OF TERROR!!!";

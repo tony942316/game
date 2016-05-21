@@ -28,6 +28,7 @@ public class Kangaroo extends Enemy
         int coins = (int)((75 - 40 + 1) * Math.random()) + 40;
         return coins;
     }
+    public String getName(){return "Kangaroo";}    
     public String getSPS()
     {
         return "KANGAROO SPECIAL ATTACK BACK LEG SMACK!!!";

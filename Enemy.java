@@ -51,6 +51,7 @@ public class Enemy
     {
         return null;
     }
+    public String getName(){return null;}
     public int doDamage()
     {
         return (int)((maxDamage - minDamage + 1) * Math.random()) + minDamage;        

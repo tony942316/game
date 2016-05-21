@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.params=health\ minDamage\ maxDamage
-comment0.target=KillerChicken(int,\ int,\ int)
+comment0.target=Gorilla(int,\ int,\ int)
 comment1.params=
 comment1.target=boolean\ special()
 comment2.params=

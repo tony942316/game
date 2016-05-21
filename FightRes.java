@@ -8,6 +8,7 @@
 public class FightRes
 {
     Player player = Setup.getPlayer();
+    Progression prog = Setup.getProg();
     boolean miss = true;
     public void stBattleSeq(String action, Enemy evil)
     {
@@ -23,14 +24,25 @@ public class FightRes
         else
         {
             System.out.println("Invalid Input....");
+            int chance = (int)((100 - 1 + 1) * Math.random()) + 1;
+            if(chance <= 70)
+            {
+                int temp = (int)((10 - 1 + 1) * Math.random()) + 1;
+                System.out.println("You fall on your face and lose " + temp + " hitpoints. :/");
+                player.changeHealth(-temp);
+            }
+            else 
+            {
+                System.out.println("You regain your balence!");
+            }
         }
         if(evil.getHealth() > 0)
         {
-            System.out.println("Enemy has " + evil.getHealth() + " hitpoints");
+            System.out.println(evil.getName() + " has " + evil.getHealth() + " hitpoints");
         }
         else
         {
-            System.out.println("Enemy is DEAD!");
+            System.out.println(evil.getName() + " is DEAD!");
         }
     }
     public void attack(Enemy evil)
@@ -75,8 +87,7 @@ public class FightRes
         {
             System.out.println("You are DEAD! You lost " + player.getCoins()*(int).7 + " coins\n");
             player.changeCoins(-player.getCoins()*(int).7);
-            int temp = player.getMaxHealth() - player.getHealth();
-            player.changeHealth(temp);
+            player.changeHealth(player.getMaxHealth());
             Home.main(args);
         }
     }
@@ -87,7 +98,17 @@ public class FightRes
             int temp = evil.drop();
             player.changeCoins(temp);
             System.out.println("You gained " + temp + " coins");
-            System.out.println("You now have " + player.getCoins() + " coins\n");
+            System.out.println("You now have " + player.getCoins() + " coins");
+            int chance = (int)((100 - 1 + 1) * Math.random()) + 1;
+            if(chance <= 35)
+            {
+                int chance2 = (int)((100 - 1 + 1) * Math.random()) + 1;
+                if(chance2 <= 100)
+                {
+                    player.changeHPotions(-1);
+                    System.out.println("You got a health potion!");
+                }
+            }
         }
     }
     public void doEAttack(Enemy evil)
@@ -96,20 +117,20 @@ public class FightRes
         {
             System.out.println(evil.getSPS());
             int temp = evil.doDamage() * evil.getSF();
-            System.out.println("Enemy special attack deals " + temp + " damage!");
+            System.out.println(evil.getName() + " special attack deals " + temp + " damage!");
             player.changeHealth(-temp);
             miss = false;
         }
         else if(evil.hit() && evil.getHealth() > 0)
         {
             int temp = evil.doDamage();
-            System.out.println("Enemy attacks and deals " + temp + " damage!");
+            System.out.println(evil.getName() + " attacks and deals " + temp + " damage!");
             player.changeHealth(-temp);
             miss = false;
         }
         else if(evil.getHealth() > 0)
         {
-            System.out.println("Enemy missed!");
+            System.out.println(evil.getName() + " missed!");
             miss = true;
         }
     }

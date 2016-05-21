@@ -1,6 +1,6 @@
 #BlueJ class context
-comment0.params=maxHealth\ minDamage\ maxDamage\ coins\ name
-comment0.target=Player(int,\ int,\ int,\ int,\ java.lang.String)
+comment0.params=maxHealth\ minDamage\ maxDamage\ coins\ hitchance\ name
+comment0.target=Player(int,\ int,\ int,\ int,\ int,\ java.lang.String)
 comment1.params=
 comment1.target=boolean\ hit()
 comment10.params=x
