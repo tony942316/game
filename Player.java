@@ -85,6 +85,7 @@ public class Player
     
     
     //All change methods
+    public void fixHitChance(){hitChance = 100;}
     public void changeHPotions(int x){hPotions -= x;}
     public void changeHitChance(int x){hitChance += x;}
     public void changeCoins(int x){coins += x;}

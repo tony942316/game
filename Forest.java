@@ -80,7 +80,7 @@ public class Forest
                 System.out.println("You have entered the territory of.....");
                 Fight.gorilla(args);
             }
-            else
+            else if(!action.equalsIgnoreCase("leave"))
             {
                 System.out.println("Invalid Input!");
             }

@@ -52,6 +52,10 @@ public class Fight
         if(chance <= 20 && player.getHitChance() < 100)
         {
             player.changeHitChance(20);
+            if(player.getHitChance() > 100)
+            {
+                 player.fixHitChance();
+            }
             System.out.println("You got a real rabbit foot! Your hit chance is now " + player.getHitChance() + "%!");
             shop.changeHCost();
         }
