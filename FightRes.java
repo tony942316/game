@@ -97,8 +97,12 @@ public class FightRes
         {
             int temp = evil.drop();
             player.changeCoins(temp);
-            System.out.println("You gained " + temp + " coins");
-            System.out.println("You now have " + player.getCoins() + " coins");
+            System.out.println("You gained " + temp + " coins.");
+            System.out.println("You now have " + player.getCoins() + " coins.");
+            int exp = evil.drop();
+            System.out.println("You have gained " + exp + " exp.");
+            player.changeExp(exp);
+            System.out.println("You now have " + player.getExp() + " exp.");
             int chance = (int)((100 - 1 + 1) * Math.random()) + 1;
             if(chance <= 35)
             {

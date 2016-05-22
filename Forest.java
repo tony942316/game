@@ -53,12 +53,12 @@ public class Forest
                     Fight.chicken(args);
                 }
             }
-            if(action.equalsIgnoreCase("boss") && !prog.getFClearing())
+            else if(action.equalsIgnoreCase("boss") && !prog.getFClearing())
             {
                 System.out.println("It's a bird! It's a plane! It's.....");
                 Fight.eagle(args);
             }
-            if(action.equalsIgnoreCase("deeper") && prog.getFClearing())
+            else if(action.equalsIgnoreCase("deeper") && prog.getFClearing())
             {
                 System.out.println("It's very dark and then.....");
                 int chance = (int)((100 - 1 + 1) * Math.random()) + 1;
@@ -75,10 +75,14 @@ public class Forest
                     Fight.troll(args);
                 }
             }
-            if(action.equalsIgnoreCase("level") && prog.getFClearing() && !prog.getFDeeper())
+            else if(action.equalsIgnoreCase("level") && prog.getFClearing() && !prog.getFDeeper())
             {
                 System.out.println("You have entered the territory of.....");
                 Fight.gorilla(args);
+            }
+            else
+            {
+                System.out.println("Invalid Input!");
             }
         }
         System.out.println();

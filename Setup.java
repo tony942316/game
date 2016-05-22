@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 public class Setup
 {
-    private static Player player = new Player(10000, 100, 100, 10000, 80, "DeBug");
+    private static Player player = new Player(10000, 100, 100, 10000, 80, 2000, "DeBug");
     private static ShopRes shop = new ShopRes();
     private static Progression prog = new Progression();
     private static Rat rat = new Rat(10, 2, 3);
@@ -20,7 +20,7 @@ public class Setup
     private static Gorilla gorilla = new Gorilla(75, 13, 19);
     public Setup(String name)
     {
-        this.player = new Player(50, 4, 6, 0, 50, name);
+        this.player = new Player(50, 4, 6, 0, 50, 0, name);
     }
     public static void main(String[]args)
     {
