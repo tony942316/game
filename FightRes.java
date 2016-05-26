@@ -85,6 +85,7 @@ public class FightRes
         }
         else
         {
+            int temp;
             System.out.println("You are DEAD! You lost " + player.getCoins()*(int).7 + " coins\n");
             player.changeCoins(-player.getCoins()*(int).7);
             player.changeHealth(player.getMaxHealth());
