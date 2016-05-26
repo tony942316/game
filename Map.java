@@ -16,7 +16,7 @@ public class Map
         System.out.println("You will unlock more once you \"complete\" an area.");
         System.out.println("Just type where you want to go.\n");
         System.out.println("Places:\nHome\nShop\nForest ");
-        while(!action.equalsIgnoreCase("bananaMuffinMan"))
+        while(!action.equalsIgnoreCase("exit"))
         {
             action = scan.nextLine();
             if(action.equalsIgnoreCase("forest"))
