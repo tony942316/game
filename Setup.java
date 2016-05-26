@@ -7,17 +7,20 @@ import java.util.Scanner;
  */
 public class Setup
 {
-    private static Player player = new Player(10000, 6, 10, 10000, "DeBug");
+    private static Player player = new Player(10000, 100, 100, 10000, 80, 2000, "DeBug");
     private static ShopRes shop = new ShopRes();
+    private static Progression prog = new Progression();
     private static Rat rat = new Rat(10, 2, 3);
     private static Rabbit rabbit = new Rabbit(15, 2, 4);
     private static KillerChicken chicken = new KillerChicken(20, 3, 4);
+    private static Eagle eagle = new Eagle(50, 2, 7);
     private static Kangaroo kangaroo = new Kangaroo(30, 4, 5);
     private static Bear bear = new Bear(40, 6, 9);
     private static Troll troll = new Troll(50, 7, 11);
+    private static Gorilla gorilla = new Gorilla(75, 13, 19);
     public Setup(String name)
     {
-        this.player = new Player(50, 4, 6, 0, name);
+        this.player = new Player(50, 4, 6, 0, 50, 0, name);
     }
     public static void main(String[]args)
     {
@@ -42,4 +45,7 @@ public class Setup
     public static Kangaroo getKangaroo(){return kangaroo;}
     public static Rabbit getRabbit(){return rabbit;}
     public static ShopRes getShopRes(){return shop;}
+    public static Progression getProg(){return prog;}
+    public static Eagle getEagle(){return eagle;}
+    public static Gorilla getGorilla(){return gorilla;}
 }

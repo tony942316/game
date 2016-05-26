@@ -28,6 +28,7 @@ public class Rat extends Enemy
         int coins = (int)((50 - 1 + 1) * Math.random()) + 1;
         return coins;
     }
+    public String getName(){return "Rat";}
     public String getSPS()
     {
         return "RAT SPECIAL ATTACK TOE NIBBLE!!!";

@@ -30,6 +30,7 @@ public class Fight
     }
     public static void rabbit(String[]args)
     {
+        ShopRes shop = Setup.getShopRes();
         FightRes battle = new FightRes();
         Player player = Setup.getPlayer();
         Rabbit evil = Setup.getRabbit();
@@ -47,6 +48,17 @@ public class Fight
         }
         evil.revive();
         battle.getDrop(evil);
+        int chance = (int)((100 - 1 + 1) * Math.random()) + 1;
+        if(chance <= 20 && player.getHitChance() < 100)
+        {
+            player.changeHitChance(20);
+            if(player.getHitChance() > 100)
+            {
+                 player.fixHitChance();
+            }
+            System.out.println("You got a real rabbit foot! Your hit chance is now " + player.getHitChance() + "%!");
+            shop.changeHCost();
+        }
         Forest.main(args);
     }
     public static void chicken(String[]args)
@@ -68,6 +80,29 @@ public class Fight
         }
         evil.revive();
         battle.getDrop(evil);
+        Forest.main(args);
+    }
+    public static void eagle(String[]args)
+    {
+        Progression prog = Setup.getProg();
+        FightRes battle = new FightRes();
+        Player player = Setup.getPlayer();
+        Eagle evil = Setup.getEagle();
+        String action;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("An Eagle! Fight!\n");
+        while(evil.getHealth() > 0 && player.getHealth() > 0)
+        {
+            System.out.println("Action?");
+            action = scan.nextLine();
+            battle.stBattleSeq(action, evil);
+            battle.doEAttack(evil);
+            battle.hCheck();
+            System.out.println("\n");
+        }
+        evil.revive();
+        battle.getDrop(evil);
+        prog.changeFClearing();
         Forest.main(args);
     }
     public static void kangaroo(String[]args)
@@ -146,6 +181,29 @@ public class Fight
         }
         evil.revive();
         battle.getDrop(evil);
+        Forest.main(args);
+    }
+    public static void gorilla(String[]args)
+    {
+        Progression prog = Setup.getProg();
+        FightRes battle = new FightRes();
+        Player player = Setup.getPlayer();
+        Gorilla evil = Setup.getGorilla();
+        String action;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("A Gorilla! Fight!\n");
+        while(evil.getHealth() > 0 && player.getHealth() > 0)
+        {
+            System.out.println("Action?");
+            action = scan.nextLine();
+            battle.stBattleSeq(action, evil);
+            battle.doEAttack(evil);
+            battle.hCheck();
+            System.out.println("\n");
+        }
+        evil.revive();
+        battle.getDrop(evil);
+        prog.changeFDeeper();
         Forest.main(args);
     }
 }
