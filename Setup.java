@@ -33,7 +33,6 @@ public class Setup
         System.out.println("The *  * around a word indicate a key word used to continue.");
         System.out.println("CaPZ DoNT maTtEr.");
         System.out.println("You will fight monsters and gain money used to buy things.");
-        System.out.println("This is permadeath so be careful!!!");
         System.out.println();
         Map.main(args);
     } 
