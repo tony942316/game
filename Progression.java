@@ -11,6 +11,7 @@ public class Progression
     private boolean fDeeper = false;
     private boolean dDunes = false;
     private boolean dOasis = false;
+    private boolean final1 = false;
     public Progression()
     {
                 
@@ -27,4 +28,7 @@ public class Progression
     
     public void changeDOasis(){dOasis = true;}
     public boolean getDOasis(){return dOasis;}
+    
+    public void changeFinal1(){final1 = true;}
+    public boolean getFinal1(){return final1;}
 }

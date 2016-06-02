@@ -206,4 +206,206 @@ public class Fight
         prog.changeFDeeper();
         Forest.main(args);
     }
+    public static void SandSnake(String[]args)
+    {
+        Progression prog = Setup.getProg();
+        FightRes battle = new FightRes();
+        Player player = Setup.getPlayer();
+        SandSnake evil = Setup.getSandSnake();
+        String action;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("A Sand Snake! Fight!\n");
+        while(evil.getHealth() > 0 && player.getHealth() > 0)
+        {
+            System.out.println("Action?");
+            action = scan.nextLine();
+            battle.stBattleSeq(action, evil);
+            battle.doEAttack(evil);
+            battle.hCheck();
+            System.out.println("\n");
+        }
+        evil.revive();
+        battle.getDrop(evil);
+        Desert.main(args);
+    }
+    public static void Salamander(String[]args)
+    {
+        Progression prog = Setup.getProg();
+        FightRes battle = new FightRes();
+        Player player = Setup.getPlayer();
+        Salamander evil = Setup.getSalamander();
+        String action;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("A Salamander! Fight!\n");
+        while(evil.getHealth() > 0 && player.getHealth() > 0)
+        {
+            System.out.println("Action?");
+            action = scan.nextLine();
+            battle.stBattleSeq(action, evil);
+            battle.doEAttack(evil);
+            battle.hCheck();
+            System.out.println("\n");
+        }
+        evil.revive();
+        battle.getDrop(evil);
+        Desert.main(args);
+    }
+    public static void Vulture(String[]args)
+    {
+        Progression prog = Setup.getProg();
+        FightRes battle = new FightRes();
+        Player player = Setup.getPlayer();
+        Vulture evil = Setup.getVulture();
+        String action;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("A Vulture! Fight!\n");
+        while(evil.getHealth() > 0 && player.getHealth() > 0)
+        {
+            System.out.println("Action?");
+            action = scan.nextLine();
+            battle.stBattleSeq(action, evil);
+            battle.doEAttack(evil);
+            battle.hCheck();
+            System.out.println("\n");
+        }
+        evil.revive();
+        battle.getDrop(evil);
+        Desert.main(args);
+    }
+    public static void Griffin(String[]args)
+    {
+        Progression prog = Setup.getProg();
+        FightRes battle = new FightRes();
+        Player player = Setup.getPlayer();
+        Griffin evil = Setup.getGriffin();
+        String action;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("A Griffin! Fight!\n");
+        while(evil.getHealth() > 0 && player.getHealth() > 0)
+        {
+            System.out.println("Action?");
+            action = scan.nextLine();
+            battle.stBattleSeq(action, evil);
+            battle.doEAttack(evil);
+            battle.hCheck();
+            System.out.println("\n");
+        }
+        evil.revive();
+        battle.getDrop(evil);
+        prog.changeDDunes();
+        Desert.main(args);
+    }
+    public static void TuskCanRaider(String[]args)
+    {
+        Progression prog = Setup.getProg();
+        FightRes battle = new FightRes();
+        Player player = Setup.getPlayer();
+        TuskCanRaider evil = Setup.getTuskCanRaider();
+        String action;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("A Tusk Can Raider! Fight!\n");
+        while(evil.getHealth() > 0 && player.getHealth() > 0)
+        {
+            System.out.println("Action?");
+            action = scan.nextLine();
+            battle.stBattleSeq(action, evil);
+            battle.doEAttack(evil);
+            battle.hCheck();
+            System.out.println("\n");
+        }
+        evil.revive();
+        battle.getDrop(evil);
+        Desert.main(args);
+    }
+    public static void SandWorm(String[]args)
+    {
+        Progression prog = Setup.getProg();
+        FightRes battle = new FightRes();
+        Player player = Setup.getPlayer();
+        SandWorm evil = Setup.getSandWorm();
+        String action;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("A Sand Worm! Fight!\n");
+        while(evil.getHealth() > 0 && player.getHealth() > 0)
+        {
+            System.out.println("Action?");
+            action = scan.nextLine();
+            battle.stBattleSeq(action, evil);
+            battle.doEAttack(evil);
+            battle.hCheck();
+            System.out.println("\n");
+        }
+        evil.revive();
+        battle.getDrop(evil);
+        Desert.main(args);
+    }
+    public static void ArmorDillo(String[]args)
+    {
+        Progression prog = Setup.getProg();
+        FightRes battle = new FightRes();
+        Player player = Setup.getPlayer();
+        ArmorDillo evil = Setup.getArmorDillo();
+        String action;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("An Armor Dillo! Fight!\n");
+        while(evil.getHealth() > 0 && player.getHealth() > 0)
+        {
+            System.out.println("Action?");
+            action = scan.nextLine();
+            battle.stBattleSeq(action, evil);
+            battle.doEAttack(evil);
+            battle.hCheck();
+            System.out.println("\n");
+        }
+        evil.revive();
+        battle.getDrop(evil);
+        Desert.main(args);
+    }
+    public static void KomodoDragonPair(String[]args)
+    {
+        Progression prog = Setup.getProg();
+        FightRes battle = new FightRes();
+        Player player = Setup.getPlayer();
+        KomodoDragonPair evil = Setup.getKomodoDragonPair();
+        String action;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Two Komodo Dragons! Fight!\n");
+        while(evil.getHealth() > 0 && player.getHealth() > 0)
+        {
+            System.out.println("Action?");
+            action = scan.nextLine();
+            battle.stBattleSeq(action, evil);
+            battle.doEAttack(evil);
+            battle.doEAttack(evil);
+            battle.hCheck();
+            System.out.println("\n");
+        }
+        evil.revive();
+        battle.getDrop(evil);
+        prog.changeDOasis();
+        Desert.main(args);
+    }
+    public static void SandKraken(String[]args)
+    {
+        Progression prog = Setup.getProg();
+        FightRes battle = new FightRes();
+        Player player = Setup.getPlayer();
+        SandKraken evil = Setup.getSandKraken();
+        String action;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("A Sand Kraken! Fight!\n");
+        while(evil.getHealth() > 0 && player.getHealth() > 0)
+        {
+            System.out.println("Action?");
+            action = scan.nextLine();
+            battle.stBattleSeq(action, evil);
+            battle.doEAttack(evil);
+            battle.hCheck();
+            System.out.println("\n");
+        }
+        evil.revive();
+        battle.getDrop(evil);
+        prog.changeFinal1();
+        Desert.main(args);
+    }
 }

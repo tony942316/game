@@ -1,13 +1,13 @@
 
 /**
- * Write a description of class KomodoDragonPair here.
+ * Write a description of class TuscanRaider here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class KomodoDragonPair extends Enemy
+public class TuskCanRaider extends Enemy
 {
-    public KomodoDragonPair(int health, int minDamage, int maxDamage)
+    public TuskCanRaider(int health, int minDamage, int maxDamage)
     {
         super(health, minDamage, maxDamage);
     }
@@ -25,16 +25,16 @@ public class KomodoDragonPair extends Enemy
     }
     public int drop()
     {
-        int coins = (int)((290 - 250 + 1) * Math.random()) + 250;
+        int coins = (int)((250 - 200 + 1) * Math.random()) + 200;
         return coins;
     }
-    public String getName(){return "KomodoDragons";}
+    public String getName(){return "Tusk Can Raider";}
     public String getSPS()
     {
-        return "KOMODO DRAGON SPECIAL ATTACK ACID TOUCH!!!";
+        return "TUSK CAN RAIDER SCREECHES!!!";
     }
     public int getSF()
     {
-        return (int)3;
+        return (int)2;
     }
 }

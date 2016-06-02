@@ -1,13 +1,13 @@
 
 /**
- * Write a description of class KomodoDragonPair here.
+ * Write a description of class DesertKraken here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class KomodoDragonPair extends Enemy
+public class SandKraken extends Enemy
 {
-    public KomodoDragonPair(int health, int minDamage, int maxDamage)
+    public SandKraken(int health, int minDamage, int maxDamage)
     {
         super(health, minDamage, maxDamage);
     }
@@ -25,16 +25,16 @@ public class KomodoDragonPair extends Enemy
     }
     public int drop()
     {
-        int coins = (int)((290 - 250 + 1) * Math.random()) + 250;
+        int coins = (int)((300 - 270 + 1) * Math.random()) + 270;
         return coins;
     }
-    public String getName(){return "KomodoDragons";}
+    public String getName(){return "SandKraken";}
     public String getSPS()
     {
-        return "KOMODO DRAGON SPECIAL ATTACK ACID TOUCH!!!";
+        return "SAND KRAKEN BREAKS THE SPACE TIME CONTINUUM!!!";
     }
     public int getSF()
     {
-        return (int)3;
+        return (int)7;
     }
 }

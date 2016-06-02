@@ -5,29 +5,36 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Vulture
+public class Vulture extends Enemy
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Vulture
-     */
-    public Vulture()
+    public Vulture(int health, int minDamage, int maxDamage)
     {
-        // initialise instance variables
-        x = 0;
+        super(health, minDamage, maxDamage);
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    public boolean special()
     {
-        // put your code here
-        return x + y;
+        int chance = (int)((100 - 1 + 1) * Math.random()) + 1;
+        if(chance > 75)
+        {
+            return true;
+        }
+        else 
+        {
+            return false;
+        }
+    }
+    public int drop()
+    {
+        int coins = (int)((200 - 150 + 1) * Math.random()) + 150;
+        return coins;
+    }
+    public String getName(){return "Vulture";}
+    public String getSPS()
+    {
+        return "VULTURE SPECIAL ATTACK FIRST PICKS!!!";
+    }
+    public int getSF()
+    {
+        return (int)2;
     }
 }
